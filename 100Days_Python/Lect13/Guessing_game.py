@@ -13,9 +13,9 @@ while guess != jackpot_number:
         print("Guess Higher Number")
     
     # for every attampt increase count
-    count+=1
+    count+=1;guess = int(input("Wapis Guess kar:"))
     # take input again
-    guess = int(input("Wapis Guess kar:"))
+    
     
 print("-------------Sahi Jawab--------------")
 if (count >1) and (count <5):
