@@ -58,16 +58,28 @@ print(n.format(name="Sushant",age=30))
 
 print("\nisalnum(),isalpha(),isdecimal(),isdigit(),isidentifier()",sep="/")
 
-p="flat"
-q="flat20"
-r="20Flat"
-s="23404"
+print("Hello".isalpha())    # True (only letters)
+print("Hello123".isalpha()) # False (contains numbers)
+print("Hello!".isalpha())   # False (contains special character)
+print("".isalpha())         # False (empty string)
 
-print(p.isalnum())
-print(q.isalnum())
-print(q.isalpha())
-print(r.isalnum())
-print(s.isdigit())
+print("Hello123".isalnum())  # True (only letters and numbers)
+print("Hello".isalnum())     # True (only letters)
+print("123".isalnum())       # True (only numbers)
+print("Hello 123".isalnum()) # False (contains space)
+print("Hello!".isalnum())    # False (contains special character)
+
+print("123".isdigit())    # True (only digits)
+print("12.3".isdigit())   # False (contains a dot)
+print("123a".isdigit())   # False (contains a letter)
+print("".isdigit())       # False (empty string)
+
+print("hello".isidentifier())   # True (valid variable name)
+print("_var".isidentifier())    # True (valid variable name)
+print("123name".isidentifier()) # False (cannot start with a number)
+print("name with space".isidentifier()) # False (contains space)
+print("for".isidentifier())     # True (but it's a Python keyword)
+
 
 
 print("\n Split()")
@@ -78,6 +90,9 @@ print(x.split())    #we can alse use this inside list
 listt=x.split()
 for i in listt:
     print(i)
+
+
+print("Hello123".isalpha()) # False (contains numbers)
 
 
 
