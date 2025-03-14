@@ -26,7 +26,7 @@ print(c[0:5:3]) #print characters after every 2 gap "prints c[0],c[3],c[5](out o
 
 # Negative Stepping-print(c[0:5:-1])  for positive index stepping cant be negative
 
-print("x:",c[-5:-1:1])
+print(c[-5:-1:2])
 print(c[-1:-5:-2])
 # Most Important
 print(c[::-1])  # prints the reverse of the string
