@@ -2,7 +2,7 @@
 abc = list(range(1,11))# stores number from 1 to (11-1)
 print(abc)
 
-cde = list(range(15)) # bu default it takes 0 as first parameter
+cde = list(range(15)) # by default it takes 0 as first parameter
 print(cde)
 
 
